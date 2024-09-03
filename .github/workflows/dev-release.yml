@@ -134,7 +134,7 @@ jobs:
           path: "${{github.workspace}}/bin/${{env.ARCHIVE_FILENAME}}"
 
     - name: Download artifact snapshot-Release
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: snapshot-devbuild
         path: all_snapshots

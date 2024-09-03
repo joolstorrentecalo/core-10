@@ -106,7 +106,7 @@ jobs:
           path: "${{github.workspace}}/dbexport/db-${{steps.vars.outputs.sha_short}}.zip"
 
     - name: Download artifact snapshot-db-dump
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: snapshot-db-dump
         path: all_snapshots
